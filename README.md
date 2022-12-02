@@ -2,9 +2,8 @@
 
 Quick barebones app to search your or any public Twitter user's likes.
 
-Currently running on searchtwitterlikes.samrawal.repl.co/ (may take little bit of time to start up.)
-
-Uses my Twitter API key which could get rate-limited, so most straightforward thing to do would be to clone this repo or fork project on Replit and add your own API key. (Set your bearer token to env variable `TWITTER_BEARER_TOKEN`)
+Currently running on [searchtwitterlikes.samrawal.repl.co/](searchtwitterlikes.samrawal.repl.co/) (on free tier - may take 30 seconds to start up)
+- The site uses my Twitter API key which could get rate-limited, so most straightforward thing to do would be to clone this repo or fork project on Replit and add your own API key. (Set your bearer token to env variable `TWITTER_BEARER_TOKEN`)
 
 
 ### Under the hood:
