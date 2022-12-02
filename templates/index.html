@@ -1,0 +1,28 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+        
+		<script>
+			function search() {
+				let username = document.getElementById("username").value;
+				let query = document.getElementById("query").value;
+				window.location.href = "/search?username="+username+"&query="+query;
+			}
+		</script>
+
+	</head>
+	<body>
+		<h1>search your/a user's liked tweets</h1><hr>
+		<p>Your Username:   <textarea id="username"></textarea></p>
+		<p>Query:   <textarea id="query" cols=40></textarea></p>
+		<br>
+		<button onclick="search()">Search</button>
+        <br>
+        <h4>Made by <a href="https://twitter.com/samarthrawal">@samarthrawal</a>. This is using off-the-shelf Okapi-BM25 algo via <a href="https://pypi.org/project/rank-bm25/">rank-bm25 package</a>.</h4>
+       <h5>Note: This is using my Twitter API keys which might get rate-limited and thus break functionality.</h5>
+       <p style="font-family: monospace">
+        The best way to use would be to <a href="https://replit.com/@samrawal/searchtwitterlikes">clone this Repl</a> and enter your own Twitter API keys into the Secrets section.  (TWITTER_BEARER_TOKEN)
+        </p>
+		
+	</body>
+</html>
