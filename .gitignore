@@ -161,3 +161,8 @@ cython_debug/
 
 # pickled cache
 tweetcache.p
+
+# replit
+.breakpoints
+.replit 
+replit.nix
