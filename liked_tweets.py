@@ -79,7 +79,7 @@ def get_liked_tweets(uid):
             cu.update_cache(uid, json_response["data"])
             all_tweets += json_response["data"]
 
-            print(f"{len(all_tweets)=}. {json_response['meta']=}")
+            #print(f"{len(all_tweets)=}. {json_response['meta']=}")
         return all_tweets
          
         

@@ -4,9 +4,9 @@ from liked_tweets import get_liked_tweets
 from utils import get_tweet_url
 from nltk.tokenize import word_tokenize
 
-import nltk; nltk.download('punkt')
+import nltk
 
-def tweetsearch(USER_ID, SEARCH_QUERY, TOP_N=100):
+def tweetsearch_bm25(USER_ID, SEARCH_QUERY, TOP_N=100):
     uid = get_user_id(USER_ID)
     liked_tweets = get_liked_tweets(uid)
     

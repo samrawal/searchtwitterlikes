@@ -27,7 +27,7 @@ def get_cache(uid):
 
     
 def is_cached(uid, data):
-    print("checking cache")
+    #print("checking cache")
     with open(CACHEFILE, 'rb') as df:
         db = pickle.load(df)
         cachedata = db.get(uid, [])
